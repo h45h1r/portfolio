@@ -1,0 +1,171 @@
+/* Header Styles */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.6em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 0.6em;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-top: 0.1em;
+}
+
+.name {
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.75em;
+}
+
+/* About Section Styles */
+.about-name {
+    font-size: 4em;
+}
+
+.about-description {
+    font-size: 1.5em;
+}
+
+/* List Styles */
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 1.25em; /* Converted 20px to 1.25em */
+}
+
+/* Body Styles */
+body {
+    background-color: #191c29;
+    color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Article and Section Styles */
+article {
+    margin-left: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+div h4 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+section p {
+    padding-top: 0.75em;
+}
+
+/* Miscellaneous Styles */
+h4, svg {
+    display: inline;
+}
+
+img {
+    max-width: 30em;
+    max-height: 30em;
+}
+
+.container p {
+    font-size: 1.25em;
+}
+
+/* Container Styles */
+.container {
+    background-color: rgb(21, 24, 21);
+    padding: 3.5em 3.5em 3em 2em;
+    margin-right: 16em;
+    margin-top: 4em;
+    margin-left: 16em;
+    border-radius: 1.75em;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+footer p {
+    padding-top: 1.6em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    font-weight: 700;
+}
+
+/* Form Styles */
+form {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 70%;
+    margin-left: 8em;
+    padding: 0.72em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25em; 
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: 35%;
+    border-radius: 1.5em;
+    margin: 0 auto;
+    border-style: solid;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

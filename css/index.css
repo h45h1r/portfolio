@@ -1,0 +1,207 @@
+/* Header Styles */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.60em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 0.60em;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-top: 0.10em;
+}
+
+/* Contact Section Styles */
+.contact a { 
+    color: white;
+    font-size: 1.5em;
+}
+
+.contact li {
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8em;
+}
+
+/* Name Styles */
+.name {
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.75em;
+}
+
+/* About Section Styles */
+.about-name {
+    font-size: 4em;
+}
+
+.about-description {
+    font-size: 1.50em;
+}
+
+/* List Styles */
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 20px;
+}
+
+/* Body Styles */
+body {
+    background-color: #191c29;
+    color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Article and Section Styles */
+article {
+    margin-left: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+section h4 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.container p {
+    font-size: 1.25em;
+}
+
+/* Special Container Styles */
+.special-container {
+    background-color: rgb(21, 24, 21);
+    padding: 16em 1em 7em 2em;
+    margin-right: 2em;
+}
+
+.border-gradient {
+    position: relative;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-image: linear-gradient(120deg, #5ddcff, #3c67e3 43%, #4e00c2) 1;
+}
+
+
+/* Container Styles */
+.container {
+    background-color: rgb(21, 24, 21);
+    padding: 3.5em 3.5em 3em 2em;
+    margin-right: 2em;
+    border-radius: 1.75em;
+}
+
+/* Skills Grid Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-gap: 1em;
+    margin: 0.5em 0.5em 0.5em 1em;
+}
+
+.skills-grid li {
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 0.2em;
+    text-align: center;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 5em;
+}
+
+.skills-grid li:hover {
+    background-color: white;
+    color: black; 
+}
+
+/* Education Text Styles */
+.education-text {
+    margin-top: 0.5em;
+    font-size: 1.15em;
+    margin-bottom: 1em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+footer li {
+    margin-right: 4em;
+}
+
+footer p {
+    padding-top: 1.6em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    font-weight: 700;
+}
+
+/* Animated Border Styles */
+@property --rotate { /* Custom property */
+    syntax: "<angle>"; /* indicates value of --rotate should be an angle */
+    initial-value: 132deg;
+    inherits: false;
+}
+
+.border-light {
+    position: relative;
+}
+
+.border-light::before,
+.border-light::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    z-index: -1;
+    border-radius: 5px;
+    background-image: linear-gradient(
+        var(--rotate),
+        #5ddcff,
+        #3c67e3 43%,
+        #4e00c2
+    );
+    animation: spin 5s linear infinite;
+}
+
+.border-light::after {
+    top: calc(6px + var(--card-height) / 6);
+    transform: scale(0.8);
+    filter: blur(6px);
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+    100% {
+        --rotate: 360deg;
+    }
+}
