@@ -1,0 +1,53 @@
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 2em; 
+        margin: 2em auto;
+        width: auto; 
+        max-width: 95%;
+    }
+
+    /* Adjust form input fields and button for smaller screens */
+    input[type="text"],
+    textarea,
+    #clearButton,
+    input[type="submit"] {
+        width: calc(100% - 2em); /* Full width minus the padding for left and right */
+        margin-bottom: 1em; 
+    }
+
+    /* Button container adjustments */
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+    }
+
+   #clearButton,
+    input[type="submit"] {
+        width: 100%; /* Full width for buttons */
+        margin: 10px 0;
+    }
+
+    #clearButton,
+    #previewButton,
+    input[type="submit"] {
+        max-width: 100%; /* Allow buttons to take full width on smaller screens */
+        width: 100%; /* Set width to full to override any other width settings */
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 1em; 
+        margin: 1em auto; 
+        max-width: 95%; 
+    }
+    input[type="text"],
+    textarea,
+    #clearButton,
+    input[type="submit"] {
+        width: calc(100% - 2em);
+    }
+}
+

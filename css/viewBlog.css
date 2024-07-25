@@ -1,0 +1,187 @@
+/* Header Styles */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.60em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 0.60em;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-top: 0.10em;
+}
+
+/* Name Styles */
+.name {
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.75em;
+}
+
+/* About Section Styles */
+.about-name {
+    font-size: 4em;
+}
+
+.about-description {
+    font-size: 1.50em;
+}
+
+/* List Styles */
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 20px;
+}
+
+/* Body Styles */
+body {
+    background-color: #191c29;
+    color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Article and Section Styles */
+article {
+    margin-left: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+section h4 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+section h5 {
+    font-weight: bold;
+    font-size: 1.40em;
+}
+
+.date-align {
+    text-align: right;
+}
+
+section p {
+    padding-top: 0.65em;
+    font-style: italic;
+}
+
+/* Miscellaneous Styles */
+h4, svg {
+    display: inline;
+}
+
+img {
+    max-width: 30em;
+    max-height: 30em;
+}
+
+/* Container Styles */
+.container p {
+    font-size: 1.25em;
+}
+
+.container {
+    background-color: rgb(21, 24, 21);
+    padding: 3.5em 3.5em 3em 2em;
+    margin-right: 2em;
+    border-radius: 1.75em;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+footer p {
+    padding-top: 1.6em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    font-weight: 700;
+}
+
+.add-post-button {
+    padding: 8px 16px;;
+    background-color: #33b249; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
+    border: none;
+    border-radius: 0.75em; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: right;
+    margin-right: 2em;
+    margin-left: 1em;
+}
+
+.add-post-button:hover {
+    background-color: #45a049;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: right; 
+}
+
+/* Dropdown Styles */
+select {
+    background-color: #33b249;
+    color: white; 
+    padding: 8px 16px; 
+    border-radius: 0.75em; 
+    border: none;
+    outline: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    appearance: none; 
+
+}
+
+/* Custom arrow for select */
+select {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Hover effect for select */
+select:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Focus effect for select */
+select:focus {
+    border-color: #45a049;
+}

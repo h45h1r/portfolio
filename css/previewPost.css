@@ -4,19 +4,20 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding-top: 0.6em;
+    padding-top: 0.60em;
     padding-right: 2em;
     padding-left: 2em;
-    padding-bottom: 0.6em;
+    padding-bottom: 0.60em;
 }
 
 header a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-    padding-top: 0.1em;
+    padding-top: 0.10em;
 }
 
+/* Name Styles */
 .name {
     font-family: "Jolly Lodger", system-ui;
     font-weight: 400;
@@ -30,7 +31,7 @@ header a {
 }
 
 .about-description {
-    font-size: 1.5em;
+    font-size: 1.50em;
 }
 
 /* List Styles */
@@ -40,7 +41,7 @@ ul {
 }
 
 li {
-    margin-right: 1.25em;
+    margin-right: 20px;
 }
 
 /* Body Styles */
@@ -53,25 +54,28 @@ body {
     font-style: normal;
 }
 
-/* Article and Section Styles */
-article {
-    margin-left: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
 section {
     margin-bottom: 2em;
     margin-top: 2em;
 }
 
-div h4 {
+section h4 {
     font-weight: bold;
     font-size: 2em;
 }
 
+section h5 {
+    font-weight: bold;
+    font-size: 1.40em;
+}
+
+.date-align {
+    text-align: right;
+}
+
 section p {
-    padding-top: 0.75em;
+    padding-top: 0.65em;
+    font-style: italic;
 }
 
 /* Miscellaneous Styles */
@@ -84,23 +88,11 @@ img {
     max-height: 30em;
 }
 
+/* Container Styles */
 .container p {
     font-size: 1.25em;
 }
 
-/* Container Styles */
-.container {
-    background-color: rgb(21, 24, 21);
-    padding: 40px;
-    border-radius: 10px; 
-    margin: 4em auto; 
-    width: 100%; 
-    max-width: 400px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white; 
-}
 
 /* Footer Styles */
 footer {
@@ -124,50 +116,49 @@ footer p {
     font-weight: 700;
 }
 
-/* Form Styles */
-form {
-    width: 100%; 
-    margin-top: 1em; 
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-}
-
-input[type="email"],
-input[type="password"] {
-    width: 90%; /* Takes up 90% of the form's width */
-    margin: 10px auto; 
-    padding: 15px;
-    border: 1px solid #3B3B3B;
-    border-radius: 10px;
-    background-color: #333;
-    color: white;
-}
-
-.button-container {
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-}
-
-input[type="submit"] {
-    background-color: #0068fa; 
-    color: white;
-    cursor: pointer;
-    width: 65%; 
-    border-radius: 10px; 
-    padding: 15px;
+.add-post-button {
+    padding: 10px 20px;
+    background-color: #33b249; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px;
     border: none;
-    margin-top: 20px; 
-    font-weight: 500;
-    font-size: 1em;
+    border-radius: 0.75em; 
+    cursor: pointer; 
     transition: background-color 0.3s;
+    text-align: right;
+    margin-right: 2em;
+    margin-left: 10px; 
+
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
+.add-post-button:hover {
+    background-color: #45a049;
+
+.edit-confirm-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
+/* Container Styles */
+.container {
+    background-color: rgb(21, 24, 21);
+    padding: 3.5em; 
+    margin: 0 auto;  
+    border-radius: 1.75em;
+    width: 80%; 
+}
+
+/* Article and Section Styles */
+article {
+    margin: 2em auto;  
+    padding: 0 2em;  
+    max-width: 1200px;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+}

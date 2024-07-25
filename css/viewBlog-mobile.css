@@ -1,0 +1,191 @@
+@media only screen and (max-width: 768px) {
+    /* Header Styles */
+    header {
+        padding-top: 0.3em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 0.3em;
+
+    }
+
+    header a {
+        font-size: 1em;
+    }
+
+    /* Navigation Styles */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow items to wrap if not enough space */
+        padding: 0;
+        list-style: none; 
+    }
+
+    nav li {
+        padding: 0.5em;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    /* Contact Section Styles */
+    .contact ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact li {
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact a {
+        font-size: 1.2em; /* Maintain font size */
+    }
+
+    /* Name Styles */
+    .name {
+        font-size: 2em; /* Smaller size to fit smaller screens */
+    }
+
+    /* About Section Styles */
+    .about-name {
+        font-size: 2.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .about-description {
+        font-size: 1.25em;
+        padding-bottom: 3.5em;
+    }
+
+    /* List Styles */
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        margin-right: 10px;
+    }
+
+    /* Body Styles */
+    body {
+        font-size: 0.9em;
+    }
+
+    /* Article and Section Styles */
+    article, .container, .special-container {
+        margin-left: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    section {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    section h4 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    section h5 {
+        font-size: 1.3em; /* Adjust heading size */
+    }
+
+    .container p {
+        font-size: 1em;
+        font-style: italic;
+    }
+
+    /* Special Container Styles */
+    .special-container {
+        padding: 0.5em;
+    }
+
+    .special-container h4 {
+        padding-top: 2em;
+    }
+
+    /* Container Styles */
+    .container {
+        padding: 1em;
+    }
+
+    /* Skills Grid Styles */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid for mobile */
+        margin: 0.5em;
+    }
+
+    .skills-grid li {
+        margin: 0.5em;
+    }
+
+    /* Footer Styles */
+    footer {
+        flex-direction: column;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    footer li {
+        margin-right: 1em;
+    }
+
+    footer p {
+        padding-top: 0.8em;
+    }
+
+    .date-align {
+        padding-bottom: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Header styles */
+    header {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /* Name styles */
+    .name, nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .name {
+        display: block; /* Using block to allow text-align to work */
+        text-align: center; 
+        margin: 0 auto; 
+    }
+
+    /* Navigation styles */
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav li {
+        padding: 0.5em;
+        display: inline-block;
+    }
+
+    .contact li {
+        padding: 0.5em;
+    }
+
+    .date-align {
+        padding-bottom: 1.2em;
+    }
+}

@@ -1,0 +1,99 @@
+@media only screen and (max-width: 768px) {
+    header {
+        padding-top: 0.3em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0.3em;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header a {
+        font-size: 1em;
+    }
+
+    .name {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .about-name {
+        font-size: 2.5em;
+    }
+
+    .about-description {
+        font-size: 1.25em;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    li {
+        margin: 0.5em;
+    }
+
+    body {
+        font-size: 0.9em;
+    }
+
+    article {
+        margin: 1em;
+        padding: 0.5em;
+    }
+
+    section {
+        margin: 1em 0;
+    }
+
+    section h4 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 1.5em 1em;
+        margin-right: 0.5em;
+        border-radius: 1em;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0;
+        position: relative;
+    }
+
+    footer p {
+        padding: 0.8em 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
+
+    header a, .name, section h4 {
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin-right: 10px;
+        width: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

@@ -69,6 +69,7 @@ section {
 div h4 {
     font-weight: bold;
     font-size: 2em;
+    padding-bottom: 1em;
 }
 
 section p {
@@ -85,18 +86,107 @@ img {
     max-height: 30em;
 }
 
+aside h4{
+    font-size: 1.2em;
+}
+
+aside p {
+    color:rgb(103, 105, 109)
+}
+
 /* Container Styles */
 .container p {
     font-size: 1.25em;
 }
 
 .container {
-    background-color: rgb(21, 24, 21);
-    padding: 3.5em 3.5em 3em 2em;
-    margin-right: 16em;
-    margin-top: 2em;
-    margin-left: 16em;
-    border-radius: 1.75em;
+    background-color: rgb(21, 24, 21); 
+    padding: 40px;
+    border-radius: 10px; 
+    margin: 4em auto;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Form Styles */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input Styles */
+input[type="text"],
+textarea {
+    width: calc(100% - 4em); /* Full width minus padding */
+    padding: 0.72em;
+    margin-bottom: 1em;
+    border: 1px solid #3B3B3B;
+    border-radius: 1em;
+    background-color: #333;
+    color: white;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#clearButton,
+#previewButton,
+input[type="submit"] {
+    padding: 0.72em 1em;
+    padding-right: 3em;
+    padding-left: 3em;
+    border-radius: 1.5em;
+    background-color: #0068fa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    max-width: 150px;
+    flex: 1 0 auto; /* Flex grow is 1, flex shrink is 0, and basis is auto */
+    margin: 5px;
+}
+
+#clearButton:hover,
+#previewButton:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Adjustments for focus state to match theme */
+input[type="text"]:focus,
+textarea:focus,
+#previewButton:focus, 
+input[type="submit"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+textarea {
+    min-height: 150px; 
+    resize: vertical;
+}
+
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 /* Footer Styles */
@@ -121,75 +211,8 @@ footer p {
     font-weight: 700;
 }
 
-/* Form Styles */
-form {
-    margin-top: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="reset"],
-input[type="submit"] {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding and border are included in width */
-}
-
-input[type="reset"],
-input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    width: 35%;
-    border-radius: 1.5em;
-}
-
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-input[type="text"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus {
-    outline: none;
-    border-color: #007bff;
-    flex: 1; /* Equal width for both buttons */
-    margin: 0; 
-}   
-
-input[type="reset"] {
-    margin-right: 10px; /* Adds space between buttons */
-}
-
-textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding and border are included in width */
-    resize: vertical; /* Allows vertical resizing only */
-    min-height: 150px; /* Minimum height for better usability */
-}
-
-textarea:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+.highlight {
+    border: 2px solid red !important;
+    background-color: #FFEEEE !important; 
+    color: black !important;
 }

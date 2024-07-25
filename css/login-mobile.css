@@ -1,0 +1,134 @@
+@media only screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.3em 1em;
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+
+    header a {
+        font-size: 0.9em; 
+        white-space: nowrap;
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis to text overflow */
+        flex-shrink: 0; /* Prevent the title from shrinking */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end; /* Align nav to the end */
+        flex-wrap: nowrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-grow: 1; /* Allow nav to grow if there is space */
+    }
+
+    nav li {
+        padding: 0.5em;
+        flex-shrink: 1; /* Allow nav items to shrink if necessary */
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .contact ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact li {
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact a {
+        font-size: 1.2em; 
+    }
+
+    /* Name Styles */
+    .name {
+        font-size: 2em; 
+        text-align: center; /* Center the name text */
+    }
+
+    /* Container Styles */
+    .container {
+        padding: 2em; 
+        margin: 2em auto; 
+        width: auto; 
+        max-width: 400px;
+        box-sizing: border-box; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    /* Form input field styles - no changes needed */
+    input[type="email"], input[type="password"] {
+        width: calc(100% - 4em); /* Adjust input width */
+        margin: 1em 0; 
+        padding: 0.8em;
+    }
+
+    /* Button container adjustments */
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%;
+    }
+
+    .button-container input[type="submit"] {
+        width: calc(100% - 4em); /* Adjust button width */
+        margin: 1em 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    /* Name styles */
+    .name {
+        width: 100%;
+        margin: 0 auto; /* Center name */
+        display: block; /* Use block to allow text-align to work */
+    }
+
+    /* Navigation styles */
+    nav ul {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    nav li {
+        padding: 0.5em;
+        display: inline-block; /* Display as inline-block */
+    }
+
+    /* Adjust container padding and margin */
+    .container {
+        padding: 1em; 
+        margin: 1em auto; 
+        max-width: calc(100% - 2em); 
+    }
+
+    /* Adjust form input fields and button */
+    input[type="email"], input[type="password"], input[type="submit"] {
+        width: calc(100% - 2em); 
+        margin: 0.5em 0;
+        padding: 0.8em; 
+    }
+
+    .button-container input[type="submit"] {
+        width: 100%;
+        margin: 1em 0; 
+    }
+}
